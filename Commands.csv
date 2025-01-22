@@ -1,5 +1,0 @@
-Category,Command,Description,Usage,Installation_Ubuntu,Installation_CentOS,Online_Resources
-Networking,ping,تست دسترسی به سرور,ping example.com,از پیش نصب شده,از پیش نصب شده,https://man7.org/linux/man-pages/man8/ping.8.html
-File Management,cp,کپی کردن فایل یا پوشه,cp file1 file2,از پیش نصب شده,از پیش نصب شده,https://man7.org/linux/man-pages/man1/cp.1.html
-File Management,mv,انتقال یا تغییر نام فایل,mv old new,از پیش نصب شده,از پیش نصب شده,https://man7.org/linux/man-pages/man1/mv.1.html
-File Management,rm,حذف فایل,rm file,از پیش نصب شده,از پیش نصب شده,https://man7.org/linux/man-pages/man1/rm.1.html
