@@ -1,0 +1,253 @@
+Category,Command,Description,Options,Usage,Installation on Ubuntu,Installation on CentOS,Installation on Other Distros,Online Resources,Local Path
+File Management,cp,Copy a file or directory from one location to another. Supports recursive copying for directories.,"""-'r': Copy directories recursively
+-p: Preserve file attributes
+-i: Prompt before overwrite""",cp file1 file2,Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man1/cp.1.html,/bin/cp
+File Management,mv,Move a file or directory to a new location or rename it within the same directory.,"""-i: Prompt before overwrite
+-u: Move only if the source is newer than the destination""",mv old new,Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man1/mv.1.html,/bin/mv
+File Management,rm,Delete a specified file or directory. Use with caution as this action is irreversible.,"""-'r': Remove directories and their contents recursively
+-f: Ignore nonexistent files and never Prompt""",rm file,Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man1/rm.1.html,/bin/rm
+Networking,ping,Send ICMP echo requests to a server to verify its availability and measure response time.,"""-'c': Specify the number of packets to send
+-i: Set interval between packets""",ping example.com,Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man8/ping.8.html,/bin/ping
+Networking,wget,"Retrieve files from the internet using HTTP, HTTPS, or FTP protocols. Supports resuming downloads.","""--continue: Resume a partially downloaded file
+-q: Quiet mode, no output""",wget http://example.com,sudo apt install wget,sudo yum install wget,sudo pacman -S wget,https://www.gnu.org/software/wget/manual/wget.html,/usr/bin/wget
+Networking,traceroute,Trace the route to a network host,-,traceroute example.com,sudo apt install traceroute,sudo yum install traceroute,sudo zypper install traceroute,https://man7.org/linux/man-pages/man8/traceroute.8.html,/usr/bin/traceroute
+Text Processing,awk,Process text files using patterns,-,awk '{print $1}' file,Pre-installed,Pre-installed,Pre-installed,https://www.gnu.org/software/gawk/,/usr/bin/awk
+Text Processing,sed,Replace text in files,-,sed 's/old/new/' file,Pre-installed,Pre-installed,Pre-installed,https://www.gnu.org/software/sed/manual/sed.html,/usr/bin/sed
+Text Processing,cut,Extract specific columns from text files,-,"cut -d ',' -f1 file",Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man1/cut.1.html,/usr/bin/cut
+System Monitoring,top,Display running processes,-,top,Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man1/top.1.html,/usr/bin/top
+System Monitoring,htop,Display running processes,-,htop,sudo apt install htop,sudo yum install htop,sudo pacman -S htop,https://htop.dev/,/usr/bin/htop
+System Monitoring,df,Display processes in a graphical interface,-,df -h,Pre-installed,Pre-installed,Pre-installed,https://man7.org/linux/man-pages/man1/df.1.html,/bin/df
+Hardware Management,MegaCli64 -AdpAllInfo -aAll,Show disk usage information,-,MegaCli64 -AdpAllInfo -aAll,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -CfgDsply -aAll,Display adapter information for RAID controllers,-,MegaCli64 -CfgDsply -aAll,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -PDList -aAll,Display RAID configuration,-,MegaCli64 -PDList -aAll,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -LDInfo -Lall -aAll,List physical disks,-,MegaCli64 -LDInfo -Lall -aAll,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -AdpSetProp EnableJBOD 0 -a0,Display information about logical drives,-,MegaCli64 -AdpSetProp -EnableJBOD -aAll,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -AdpSetProp EnableJBOD 1 -a0,Enable JBOD mode for disks,-,MegaCli64 -AdpSetProp -DisableJBOD -aAll,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,"MegaCli64 -CfgLdAdd -r5 [252:0,252:1,252:2] WT NORA -a0",Disable JBOD mode for disks,-,"MegaCli64 -CfgLdAdd -r5 [252:0,252:1,252:2] WT NORA -a0","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -LDSetProp WT -L1 -a0,Create a RAID 0 with two disks,-,MegaCli64 -LDSetProp WT -L1 -a0,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -LDSetProp WB -L1 -a0,Create a RAID 1 with two disks,-,MegaCli64 -LDSetProp WB -L1 -a0,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -LDSetProp NORA -L1 -a0,Create a RAID 5 with three disks,-,MegaCli64 -LDSetProp NORA -L1 -a0,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -LDSetProp RA -L1 -a0,Create a RAID 6 with four disks,-,MegaCli64 -LDSetProp RA -L1 -a0,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -CfgCache -Enbl -a0,Create a RAID 10 with two disk groups,-,MegaCli64 -CfgCache -Enbl -a0,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,MegaCli64 -CfgCache -Dsbl -a0,Enable write-back cache for RAID controller,-,MegaCli64 -CfgCache -Dsbl -a0,"1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,"MegaCli64 -CfgLdAdd -r0 [252:0,252:1] WT NORA -a0",Disable write-back cache for RAID controller,-,"MegaCli64 -CfgLdAdd -r0 [252:0,252:1] WT NORA -a0","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,"MegaCli64 -CfgLdAdd -r1 [252:0,252:1] WT NORA -a0",Set read-ahead policy for logical drives,-,"MegaCli64 -CfgLdAdd -r1 [252:0,252:1] WT NORA -a0","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,"MegaCli64 -CfgLdAdd -r5 [252:0,252:1,252:2] WT NORA -a0",Disable read-ahead policy for logical drives,-,"MegaCli64 -CfgLdAdd -r5 [252:0,252:1,252:2] WT NORA -a0","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,"MegaCli64 -CfgLdAdd -r6 [252:0,252:1,252:2,252:3] WT NORA -a0",Enable write-through policy for logical drives,-,"MegaCli64 -CfgLdAdd -r6 [252:0,252:1,252:2,252:3] WT NORA -a0","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
+Hardware Management,"MegaCli64 -CfgSpanAdd -r10 -Array0[252:0,252:1] -Array1[252:2,252:3] WT NORA -a0",Disable write-through policy for logical drives,-,"MegaCli64 -CfgSpanAdd -r10 -Array0[252:0,252:1] -Array1[252:2,252:3] WT NORA -a0","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v","1. Download from Broadcom: https://docs.broadcom.com/
+2. Extract the file: tar -xzvf MegaCli.tar.gz
+3. Copy the executable: sudo cp MegaCli64 /usr/local/bin/
+4. Set permissions: sudo chmod +x /usr/local/bin/MegaCli64
+5. Verify installation: MegaCli64 -v",https://docs.broadcom.com/docs/12354845,/opt/MegaRAID/MegaCli64
